@@ -1,2 +1,6 @@
-# LAPISCOtraining
-Answers of the LAPISCO training. The topics include questions about Digital Processing Images, Machine Learning and Neural Networks
+## LAPISCOtraining
+
+### Topics
+
+All the topics are in the following website [PT-BR]:
+<https://professorpedrosa.com/livros/introducao-ao-processamento-digital-de-imagens-utilizando-opencv-na-linguagem-c/treinamento-pdi-com-opencv-em-c/>
