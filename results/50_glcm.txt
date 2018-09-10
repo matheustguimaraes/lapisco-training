@@ -1,0 +1,13 @@
+energy = 13184.526367
+contrast = 469.982788
+homogeneity = 0.962032
+idm = 0.023279
+entropy = 0.406740
+dissimilarity = 1.961670
+asm = 0.587839
+correlation = -10.481425
+difference of variance = 1156760.875000
+difference of entropy = -42.466866
+sum of entropy = 5.961667
+sum of variance = 43694.199219
+sum of average = 269.132721
