@@ -11,7 +11,7 @@ int main() {
     Mat img, grayImage;
     vector<Vec3f> circles;
     
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg");
+    img = imread("../samples/paint.jpg");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -28,7 +28,7 @@ int main() {
 
     imshow("image with Hough transform", img);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/29_circle_hough_transform.jpg", img);
+    imwrite("../results/29_circle_hough_transform.jpg", img);
 
     waitKey(0);
     return 0;

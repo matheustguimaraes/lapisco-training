@@ -48,7 +48,7 @@ void getRectContoursImage(Mat img) {
 
         imshow(nameContours, rectContoursImages);
 
-        imwrite("/home/matheus/Dropbox/treinamento-pdi/results/34_paint_retangles.jpg", rectContoursImages);
+        imwrite("../results/34_paint_retangles.jpg", rectContoursImages);
     }
 
     drawingContours.release();
@@ -57,7 +57,7 @@ void getRectContoursImage(Mat img) {
 int main() {
     Mat img, drawingImage;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg");
+    img = imread("../samples/paint.jpg");
 
     imshow("original image", img);
 

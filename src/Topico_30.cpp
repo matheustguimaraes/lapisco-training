@@ -9,7 +9,7 @@ int main() {
     Mat img, grayImage, imageWithContours;
     vector<vector<Point> > contours;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg");
+    img = imread("../samples/paint.jpg");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -23,7 +23,7 @@ int main() {
 
     printf("contours numbers: %lu \n",contours.size());
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/30_paint_findContours.jpg", imageWithContours);
+    imwrite("../results/30_paint_findContours.jpg", imageWithContours);
 
     waitKey(0);
     return 0;

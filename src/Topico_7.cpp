@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     Mat grayImage, thresholdFilter;
-    Mat image = imread("/home/matheus/Dropbox/treinamento-pdi/samples/tiger.jpg", CV_LOAD_IMAGE_COLOR);
+    Mat image = imread("../samples/tiger.jpg", CV_LOAD_IMAGE_COLOR);
     namedWindow("tiger colored", CV_WINDOW_AUTOSIZE);
 
     cvtColor(image, grayImage, CV_RGB2GRAY);
@@ -17,9 +17,9 @@ int main() {
     imshow("tiger in gray scale", grayImage);
     imshow("tiger with threshold filtering", thresholdFilter);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/tiger_colored.jpg", image);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/tiger_gray_scale.jpg", grayImage);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/7_tiger_threshold_filtering.jpg", thresholdFilter);
+    imwrite("../results/tiger_colored.jpg", image);
+    imwrite("../results/tiger_gray_scale.jpg", grayImage);
+    imwrite("../results/7_tiger_threshold_filtering.jpg", thresholdFilter);
 
     waitKey(0);
     return 0;

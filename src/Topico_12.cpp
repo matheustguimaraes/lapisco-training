@@ -42,7 +42,7 @@ int main() {
 
     imshow("txt image", tiger);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/12_txt_to_tiger.jpg", tiger);
+    imwrite("../results/12_txt_to_tiger.jpg", tiger);
 
     cvWaitKey(0);
     return 0;

@@ -7,7 +7,7 @@ using namespace cv;
 using namespace std;
 
 void writeTxt(Mat grayImage) {
-    FILE *txtDocument = fopen("/home/matheus/Dropbox/treinamento-pdi/results/9_image.txt", "w");
+    FILE *txtDocument = fopen("../results/9_image.txt", "w");
     for (int i = 0; i < grayImage.rows; ++i) {
         for (int j = 0; j < grayImage.cols; ++j) {
             fprintf(txtDocument, "%d ", grayImage.at<uchar>(i, j));
@@ -19,7 +19,7 @@ void writeTxt(Mat grayImage) {
 
 int main() {
     Mat grayImage;
-    Mat image = imread("/home/matheus/Dropbox/treinamento-pdi/samples/baboon.jpg", CV_LOAD_IMAGE_COLOR);
+    Mat image = imread("../samples/baboon.jpg", CV_LOAD_IMAGE_COLOR);
     namedWindow("baboon colored", CV_WINDOW_AUTOSIZE);
 
     cvtColor(image, grayImage, CV_RGB2GRAY);

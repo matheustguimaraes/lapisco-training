@@ -71,7 +71,7 @@ void getAutoBlobImages(IplImage *img) {
 }
 
 int main() {
-    IplImage *img = cvLoadImage("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg", CV_LOAD_IMAGE_COLOR);
+    IplImage *img = cvLoadImage("../samples/paint.jpg", CV_LOAD_IMAGE_COLOR);
 
     cvShowImage("original image", img);
 

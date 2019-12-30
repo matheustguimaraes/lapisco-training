@@ -8,7 +8,7 @@ using namespace cv;
 int main() {
     Mat img, grayImg, otsuThresholdImg, structuringElement;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/black_lightning.jpg");
+    img = imread("../samples/black_lightning.jpg");
 
     cvtColor(img, grayImg, CV_RGB2GRAY);
 
@@ -25,7 +25,7 @@ int main() {
         imshow("dilated image with vertical structuring element", otsuThresholdImg);
     }
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/37_black_lightning_dilated_vertical_element.jpg", otsuThresholdImg);
+    imwrite("../results/37_black_lightning_dilated_vertical_element.jpg", otsuThresholdImg);
 
     waitKey(0);
     return 0;

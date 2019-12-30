@@ -59,7 +59,7 @@ IplImage *getBlobImage(IplImage *img) {
 int main() {
     IplImage *img, *blobImg;
 
-    img = cvLoadImage("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg", CV_LOAD_IMAGE_COLOR);
+    img = cvLoadImage("../samples/paint.jpg", CV_LOAD_IMAGE_COLOR);
 
     blobImg = getBlobImage(img);
 

@@ -100,7 +100,7 @@ Mat getMouseRegionGrowing(Mat image) {
 int main() {
     Mat img, grayImage, mouseRegionGrowing, centroid;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/black_circle.jpg");
+    img = imread("../samples/black_circle.jpg");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -112,7 +112,7 @@ int main() {
     imshow("region growing", mouseRegionGrowing);
     imshow("region growing with green centroid", centroid);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/22_green_centroid.jpg", centroid);
+    imwrite("../results/22_green_centroid.jpg", centroid);
 
     waitKey(0);
     return 0;

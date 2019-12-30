@@ -9,7 +9,7 @@ int main() {
     Mat img, grayImage, adaptiveThresholdImg;
     vector<vector<Point> > contours;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/lena.jpg");
+    img = imread("../samples/lena.jpg");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -19,7 +19,7 @@ int main() {
     imshow("original image", img);
     imshow("thresholded image", adaptiveThresholdImg);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/28_lena_adaptive_threshold.jpg", adaptiveThresholdImg);
+    imwrite("../results/28_lena_adaptive_threshold.jpg", adaptiveThresholdImg);
 
     waitKey(0);
     return 0;

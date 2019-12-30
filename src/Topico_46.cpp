@@ -7,7 +7,7 @@ using namespace cv;
 
 void setFileLoop(double statistics[]) {
     FILE *file;
-    file = fopen("/home/matheus/Dropbox/treinamento-pdi/results/46_statistic_moments.txt", "w");
+    file = fopen("../results/46_statistic_moments.txt", "w");
     for (int i = 0; i < 10; ++i) {
         fprintf(file, "statistic moment %2.d = %20.20lf\n", i + 1, statistics[i]);
     }
@@ -20,7 +20,7 @@ void getFileStatistics() {
     vector<vector<Point>> contours;
     double statistics[10] = {0};
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/black_box.jpg", CV_LOAD_IMAGE_COLOR);
+    img = imread("../samples/black_box.jpg", CV_LOAD_IMAGE_COLOR);
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 

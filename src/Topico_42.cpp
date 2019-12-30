@@ -16,7 +16,7 @@ int main() {
     CvBlobs blobs;
     IplImage *img, *cannyImage, *labelImg;
 
-    img = cvLoadImage("/home/matheus/Dropbox/treinamento-pdi/samples/objects.png", CV_LOAD_IMAGE_COLOR);
+    img = cvLoadImage("../samples/objects.png", CV_LOAD_IMAGE_COLOR);
 
     cannyImage = cvCreateImage(cvGetSize(img), IPL_DEPTH_8U, 1);
 

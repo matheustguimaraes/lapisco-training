@@ -23,7 +23,7 @@ void setDotInCenter(Mat grayImage, Mat_<Vec3b> imageWithCenterDot) {
 
 int main() {
     Mat grayImage;
-    Mat image = imread("/home/matheus/Dropbox/treinamento-pdi/samples/black_box.jpg", CV_LOAD_IMAGE_COLOR);
+    Mat image = imread("../samples/black_box.jpg", CV_LOAD_IMAGE_COLOR);
     namedWindow("black_box", CV_WINDOW_AUTOSIZE);
 
     cvtColor(image, grayImage, CV_RGB2GRAY);
@@ -34,7 +34,7 @@ int main() {
     imshow("black_box in gray scale", grayImage);
     imshow("black_box with white center", imageWithCenterDot);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/12_black_box_with_center_dot.jpg", imageWithCenterDot);
+    imwrite("../results/12_black_box_with_center_dot.jpg", imageWithCenterDot);
 
     waitKey(0);
     return 0;

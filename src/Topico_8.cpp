@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     Mat grayImage, resizeMinorImage, resizeMajorImage;
-    Mat image = imread("/home/matheus/Dropbox/treinamento-pdi/samples/baboon.jpg", CV_LOAD_IMAGE_COLOR);
+    Mat image = imread("../samples/baboon.jpg", CV_LOAD_IMAGE_COLOR);
     namedWindow("baboon colored", CV_WINDOW_AUTOSIZE);
 
     cvtColor(image, grayImage, CV_RGB2GRAY);
@@ -19,10 +19,10 @@ int main() {
     imshow("baboon resized to minor scale", resizeMinorImage);
     imshow("baboon resized to major scale", resizeMajorImage);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/baboon_colored.jpg", image);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/baboon_gray_scale.jpg", grayImage);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/8_baboon_minor_scale.jpg", resizeMinorImage);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/8_baboon_major_scale.jpg", resizeMajorImage);
+    imwrite("../results/baboon_colored.jpg", image);
+    imwrite("../results/baboon_gray_scale.jpg", grayImage);
+    imwrite("../results/8_baboon_minor_scale.jpg", resizeMinorImage);
+    imwrite("../results/8_baboon_major_scale.jpg", resizeMajorImage);
 
     waitKey(0);
     return 0;

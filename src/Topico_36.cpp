@@ -8,7 +8,7 @@ using namespace cv;
 int main() {
     Mat img, grayImg, otsuThresholdImg, erodedImg;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/tiger.jpg");
+    img = imread("../samples/tiger.jpg");
 
     cvtColor(img, grayImg, CV_RGB2GRAY);
 
@@ -22,7 +22,7 @@ int main() {
     imshow("Otsu's threshold image", otsuThresholdImg);
     imshow("eroded image", erodedImg);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/36_tiger_eroded_otsu_thresholding.jpg", erodedImg);
+    imwrite("../results/36_tiger_eroded_otsu_thresholding.jpg", erodedImg);
 
     waitKey(0);
     return 0;

@@ -81,7 +81,7 @@ void getAutoRegionGrowing(Mat grayImage) {
 
                 imshow(nameUnitRegionGrowing, unitRegionGrowing);
 
-                imwrite("/home/matheus/Dropbox/treinamento-pdi/results/27_colored_images_auto_region_growing.jpg",
+                imwrite("../results/27_colored_images_auto_region_growing.jpg",
                         unitRegionGrowing);
             }
         }
@@ -91,7 +91,7 @@ void getAutoRegionGrowing(Mat grayImage) {
 int main() {
     Mat img, gray;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg");
+    img = imread("../samples/paint.jpg");
 
     cvtColor(img, gray, CV_RGB2GRAY);
 

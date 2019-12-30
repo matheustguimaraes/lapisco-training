@@ -89,7 +89,7 @@ Mat getRegionGrowing(Mat image) {
 
 int main() {
     Mat img, grayImage;
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/objects.png");
+    img = imread("../samples/objects.png");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -97,7 +97,7 @@ int main() {
 
     imshow("region growing", grayImage);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/25_objects_three_rgb_region_growing.jpg", grayImage);
+    imwrite("../results/25_objects_three_rgb_region_growing.jpg", grayImage);
 
     waitKey(0);
     return 0;

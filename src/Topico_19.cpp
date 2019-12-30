@@ -53,7 +53,7 @@ Mat getHistogram(Mat img) {
 int main() {
     Mat img, grayImg, gradX, gradY, absGradX, absGradY, sobelFilter, histImg, histSobelFilter;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/lena.jpg");
+    img = imread("../samples/lena.jpg");
 
     GaussianBlur(img, img, Size(3, 3), 0, 0, BORDER_DEFAULT);
 
@@ -75,8 +75,8 @@ int main() {
     imshow("Histogram of the image", histImg);
     imshow("Histogram of the Sobel filter", histSobelFilter);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/19_lena_histogram.jpg", histImg);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/19_lena_histogram_sobel_filter.jpg", histSobelFilter);
+    imwrite("../results/19_lena_histogram.jpg", histImg);
+    imwrite("../results/19_lena_histogram_sobel_filter.jpg", histSobelFilter);
 
     waitKey(0);
     return 0;

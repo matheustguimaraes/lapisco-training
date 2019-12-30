@@ -53,7 +53,7 @@ Mat getCentralRegionGrowing(Mat image) {
 int main() {
     Mat img, grayImage, centralRegionGrowing;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/black_circle.jpg");
+    img = imread("../samples/black_circle.jpg");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -62,7 +62,7 @@ int main() {
     imshow("black circle", img);
     imshow("image with region growing", centralRegionGrowing);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/20_central_region_growing.jpg", centralRegionGrowing);
+    imwrite("../results/20_central_region_growing.jpg", centralRegionGrowing);
 
     waitKey(0);
     return 0;

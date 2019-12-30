@@ -51,14 +51,14 @@ void getRectContoursImage(Mat img) {
 
         imshow(nameContours, rectContoursImages);
 
-        imwrite("/home/matheus/Dropbox/treinamento-pdi/results/33_paint_retangles.jpg", rectContoursImages);
+        imwrite("../results/33_paint_retangles.jpg", rectContoursImages);
     }
 }
 
 int main() {
     Mat img, drawingImage;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg");
+    img = imread("../samples/paint.jpg");
 
     imshow("original image", img);
 

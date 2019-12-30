@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     Mat grayImage, gradX, gradY, absGradX, absGradY, sobelFilter;
-    Mat image = imread("/home/matheus/Dropbox/treinamento-pdi/samples/lena.jpg", CV_LOAD_IMAGE_COLOR);
+    Mat image = imread("../samples/lena.jpg", CV_LOAD_IMAGE_COLOR);
     namedWindow("lena colored", CV_WINDOW_AUTOSIZE);
 
     GaussianBlur(image, image, Size(3, 3), 0, 0, BORDER_DEFAULT);
@@ -26,7 +26,7 @@ int main() {
     imshow("lena in gray scale", grayImage);
     imshow("lena with Sobel filter", sobelFilter);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/13_lena_sobel_filter.jpg", sobelFilter);
+    imwrite("../results/13_lena_sobel_filter.jpg", sobelFilter);
 
     waitKey(0);
     return 0;

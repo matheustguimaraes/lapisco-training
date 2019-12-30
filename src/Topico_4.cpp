@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     Mat channels[3], hsvImage;
-    Mat image = imread("/home/matheus/Dropbox/treinamento-pdi/samples/baboon.jpg", CV_LOAD_IMAGE_COLOR);
+    Mat image = imread("../samples/baboon.jpg", CV_LOAD_IMAGE_COLOR);
     namedWindow("baboon colored", CV_WINDOW_AUTOSIZE);
 
     cvtColor(image, hsvImage, CV_RGB2HSV);
@@ -19,10 +19,10 @@ int main() {
     imshow("hsv baboon saturation", channels[1]);
     imshow("hsv baboon value", channels[2]);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/4_hsv_baboon.jpg", hsvImage);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/4_hsv_baboon_hue.jpg", channels[0]);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/4_hsv_baboon_saturation.jpg", channels[1]);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/4_hsv_baboon_value.jpg", channels[2]);
+    imwrite("../results/4_hsv_baboon.jpg", hsvImage);
+    imwrite("../results/4_hsv_baboon_hue.jpg", channels[0]);
+    imwrite("../results/4_hsv_baboon_saturation.jpg", channels[1]);
+    imwrite("../results/4_hsv_baboon_value.jpg", channels[2]);
 
     waitKey(0);
     return 0;

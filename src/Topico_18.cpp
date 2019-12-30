@@ -40,7 +40,7 @@ Mat getEqualizedImage(Mat img) {
 int main() {
     Mat img, grayImg, laplacianImg, absLaplacian, equalizedLaplacian;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/lena.jpg");
+    img = imread("../samples/lena.jpg");
 
     GaussianBlur(img, img, Size(3, 3), 0, 0, BORDER_DEFAULT);
 
@@ -55,8 +55,8 @@ int main() {
     imshow("Image with laplacian function", absLaplacian);
     imshow("Image with equalized laplacian", equalizedLaplacian);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/18_lena_laplacian.jpg", absLaplacian);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/18_lena_equalized_laplacian.jpg", equalizedLaplacian);
+    imwrite("../results/18_lena_laplacian.jpg", absLaplacian);
+    imwrite("../results/18_lena_equalized_laplacian.jpg", equalizedLaplacian);
 
     waitKey(0);
     return 0;

@@ -53,14 +53,14 @@ Mat getRectContoursImage(Mat img) {
 int main() {
     Mat img, drawingImage;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/paint.jpg");
+    img = imread("../samples/paint.jpg");
 
     drawingImage = getRectContoursImage(img);
 
     imshow("original image", img);
     imshow("image with contours", drawingImage);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/32_paint_cvContourArea.jpg", drawingImage);
+    imwrite("../results/32_paint_cvContourArea.jpg", drawingImage);
 
     waitKey(0);
     return 0;

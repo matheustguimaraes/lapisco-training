@@ -73,14 +73,14 @@ Mat getMouseRegionGrowing(Mat_<Vec3b> image) {
 
 int main() {
     Mat mouseRegionGrowing;
-    Mat_<Vec3b> img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/lightning.jpg");
+    Mat_<Vec3b> img = imread("../samples/lightning.jpg");
 
     mouseRegionGrowing = getMouseRegionGrowing(img);
 
     imshow("lightning", img);
     imshow("region growing", mouseRegionGrowing);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/24_lightning_rgb_region_growing.jpg", mouseRegionGrowing);
+    imwrite("../results/24_lightning_rgb_region_growing.jpg", mouseRegionGrowing);
 
     waitKey(0);
     return 0;

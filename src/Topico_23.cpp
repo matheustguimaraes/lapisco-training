@@ -68,7 +68,7 @@ Mat getMouseRegionGrowing(Mat image) {
 int main() {
     Mat img, grayImage, mouseRegionGrowing, centroid;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/lightning.jpg");
+    img = imread("../samples/lightning.jpg");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -77,8 +77,8 @@ int main() {
     imshow("lightning", grayImage);
     imshow("region growing", mouseRegionGrowing);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/lightning_gray_scale.jpg", grayImage);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/23_lightning_region_growing.jpg", mouseRegionGrowing);
+    imwrite("../results/lightning_gray_scale.jpg", grayImage);
+    imwrite("../results/23_lightning_region_growing.jpg", mouseRegionGrowing);
 
     waitKey(0);
     return 0;

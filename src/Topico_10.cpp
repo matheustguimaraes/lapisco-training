@@ -6,7 +6,7 @@ using namespace cv;
 using namespace std;
 
 void writeTxtThresholdFiltering(Mat image) {
-    FILE *txtDocument = fopen("/home/matheus/Dropbox/treinamento-pdi/results/10_image.txt", "w");
+    FILE *txtDocument = fopen("../results/10_image.txt", "w");
     for (int i = 0; i < image.rows; ++i) {
         for (int j = 0; j < image.cols; ++j) {
             image.at<uchar>(i, j) > 120 ? image.at<uchar>(i, j) = 220 : image.at<uchar>(i, j) = 0;
@@ -19,7 +19,7 @@ void writeTxtThresholdFiltering(Mat image) {
 
 int main() {
     Mat grayImage, thresholdFilter;
-    Mat image = imread("/home/matheus/Dropbox/treinamento-pdi/samples/tiger.jpg", CV_LOAD_IMAGE_COLOR);
+    Mat image = imread("../samples/tiger.jpg", CV_LOAD_IMAGE_COLOR);
     namedWindow("baboon colored", CV_WINDOW_AUTOSIZE);
 
     cvtColor(image, grayImage, CV_RGB2GRAY);

@@ -68,7 +68,7 @@ Mat getMouseRegionGrowing(Mat image) {
 int main() {
     Mat img, grayImage, mouseRegionGrowing;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/black_circle.jpg");
+    img = imread("../samples/black_circle.jpg");
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
 
@@ -77,7 +77,7 @@ int main() {
     imshow("black circle", grayImage);
     imshow("image with region growing", mouseRegionGrowing);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/21_mouse_region_growing.jpg", mouseRegionGrowing);
+    imwrite("../results/21_mouse_region_growing.jpg", mouseRegionGrowing);
 
     waitKey(0);
     return 0;

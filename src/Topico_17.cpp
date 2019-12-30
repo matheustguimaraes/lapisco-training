@@ -85,7 +85,7 @@ Mat getEqualizedImage(Mat img) {
 int main() {
     Mat img, grayImage, equalizedImage, grayHist, equalizedHist;
 
-    img = imread("/home/matheus/Dropbox/treinamento-pdi/samples/lena.jpg");
+    img = imread("../samples/lena.jpg");
     namedWindow("Gray Image", WINDOW_AUTOSIZE);
 
     cvtColor(img, grayImage, CV_RGB2GRAY);
@@ -100,9 +100,9 @@ int main() {
     imshow("Gray Histogram", grayHist);
     imshow("Equalized Histogram", equalizedHist);
 
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/17_lena_equalized_without_opencv.jpg", equalizedImage);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/17_lena_gray_histogram.jpg", grayHist);
-    imwrite("/home/matheus/Dropbox/treinamento-pdi/results/17_lena_equalized_histogram_without_opencv.jpg", equalizedHist);
+    imwrite("../results/17_lena_equalized_without_opencv.jpg", equalizedImage);
+    imwrite("../results/17_lena_gray_histogram.jpg", grayHist);
+    imwrite("../results/17_lena_equalized_histogram_without_opencv.jpg", equalizedHist);
 
     waitKey(0);
     return 0;
